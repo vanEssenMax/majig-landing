@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+    <meta name="theme-color" content="#702eff"/>
+    <meta
+            name="description"
+            content="Create your own universe"
+    />
+
+    <title>Majig - Coming soon</title>
+</head>
+<style>
+    @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+    *{
+        padding: 0px;
+        margin: 0px;
+    }
+    .centered{
+        font-family: 'Roboto', sans-serif;
+        position: fixed;
+        top:50%;
+        width: 400px;
+        left: 200px;
+        transform: translateY(-50%);
+    }
+    p{
+        line-height: 1.8;
+        font-size: 14px;
+    }
+    i{
+        opacity: 0.8;
+    }
+    .window-frame{
+        position: fixed;
+        height: 100%;
+        right: 0px;
+        width: calc(100vw - 800px);
+        max-width: 2000px;
+        background-image: url("./img/ali-muftuogullari-wpQZnzv2TVM-unsplash.jpg");
+        background-position: center;
+        background-size: cover;
+    }
+    .window-frame::after{
+        content:"";
+        height: calc(100% + 8px);
+        top:-4px;
+        left: -9px;
+        position: absolute;
+        width: 40px;
+        transform: rotate(1deg);
+        background:white;
+    }
+    small{
+        user-select: none;
+        opacity: 0.8;
+    }
+    a{
+        color: inherit;
+    }
+    @media(max-width: 1500px){
+        .centered{
+            width: 400px;
+            left: 50px;
+        }
+        .window-frame{
+            width: calc(100vw - 500px);
+        }
+    }
+
+    @media(max-width: 1000px){
+        .window-frame{
+            display: none;
+        }
+        .centered{
+            left:50%;
+            transform: translate(-50%, -50%);
+        }
+    }
+</style>
+<body>
+    <div class="window-frame">
+
+    </div>
+    <div class="centered">
+        <img src="./img/Majig-Logoc-03.png" alt="Majig Logo" width="180px"/>
+        <p>
+            We're currently working on the next TTRPG management tool,
+            even if you aren't a dungeon or game master this may still be
+            something for you. Our toolset will make it easy for beginning and
+            expert world builders to create their own world. Want to be one of
+            the first to try it? Check in later.
+            <br/><br/>
+            <i>"We'll be showing you what we've been working on for quite some time" - Max, Founder and Developer</i>
+            <br/><br/>
+            <small><a href="mailto:hello@majig.net">Contact</a></small>
+        </p>
+    </div>
+</body>
+</html>
