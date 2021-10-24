@@ -26,6 +26,13 @@
         left: 200px;
         transform: translateY(-50%);
     }
+    .footer{
+        font-family: 'Roboto', sans-serif;
+        position: fixed;
+        left:25px;
+        bottom: 25px;
+        font-size: 12px;
+    }
     p{
         line-height: 1.8;
         font-size: 14px;
@@ -82,6 +89,10 @@
 
     @media(max-width: 600px){
         .centered{
+            top:30px;
+            transform:none !important;
+            left: 0px;
+            margin-left: 25px;
             width: calc(100% - 50px);
         }
     }
@@ -103,6 +114,9 @@
             <br/><br/>
             <small><a target="_blank" href="https://majig.notion.site/Updates-e294d430f55a48d1a973d65bbfec13e3">Updates</a>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<a href="mailto:hello@majig.net">Contact</a></small>
         </p>
+    </div>
+    <div class="footer">
+        &copy; 2021 <b>The Majig Group</b>. All rights reserved.
     </div>
 </body>
 </html>
