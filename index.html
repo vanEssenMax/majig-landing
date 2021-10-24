@@ -10,37 +10,56 @@
     />
 
     <title>Majig - Coming soon</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="/img/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/img/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/img/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/img/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/img/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/img/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/img/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/img/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/img/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/img/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/img/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/img/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/img/favicon-16x16.png">
 </head>
 <style>
     @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
-    *{
+    * {
         padding: 0px;
         margin: 0px;
     }
-    .centered{
+
+    .centered {
         font-family: 'Roboto', sans-serif;
         position: fixed;
-        top:50%;
+        top: 50%;
         width: 400px;
         left: 200px;
         transform: translateY(-50%);
     }
-    .footer{
+
+    .footer {
         font-family: 'Roboto', sans-serif;
         position: fixed;
-        left:25px;
+        left: 25px;
         bottom: 25px;
         font-size: 12px;
     }
-    p{
+
+    p {
         line-height: 1.8;
         font-size: 14px;
     }
-    i{
+
+    i {
         opacity: 0.8;
     }
-    .window-frame{
+
+    .window-frame {
         position: fixed;
         height: 100%;
         right: 0px;
@@ -50,47 +69,53 @@
         background-position: center;
         background-size: cover;
     }
-    .window-frame::after{
-        content:"";
+
+    .window-frame::after {
+        content: "";
         height: calc(100% + 8px);
-        top:-4px;
+        top: -4px;
         left: -9px;
         position: absolute;
         width: 40px;
         transform: rotate(1deg);
-        background:white;
+        background: white;
     }
-    small{
+
+    small {
         user-select: none;
         opacity: 0.8;
     }
-    a{
+
+    a {
         color: inherit;
     }
-    @media(max-width: 1500px){
-        .centered{
+
+    @media (max-width: 1500px) {
+        .centered {
             width: 400px;
             left: 50px;
         }
-        .window-frame{
+
+        .window-frame {
             width: calc(100vw - 500px);
         }
     }
 
-    @media(max-width: 1000px){
-        .window-frame{
+    @media (max-width: 1000px) {
+        .window-frame {
             display: none;
         }
-        .centered{
-            left:50%;
+
+        .centered {
+            left: 50%;
             transform: translate(-50%, -50%);
         }
     }
 
-    @media(max-width: 600px){
-        .centered{
-            top:30px;
-            transform:none !important;
+    @media (max-width: 600px) {
+        .centered {
+            top: 30px;
+            transform: none !important;
             left: 0px;
             margin-left: 25px;
             width: calc(100% - 50px);
@@ -98,25 +123,26 @@
     }
 </style>
 <body>
-    <div class="window-frame">
+<div class="window-frame">
 
-    </div>
-    <div class="centered">
-        <img src="./img/Majig-Logoc-03.png" alt="Majig Logo" width="180px"/>
-        <p>
-            We're currently working on the next TTRPG management tool,
-            even if you aren't a dungeon or game master this may still be
-            something for you. Our toolset will make it easy for beginning and
-            expert world builders to create their own world. Want to be one of
-            the first to try it? Check in later.
-            <br/><br/>
-            <i>"We'll be showing you what we've been working on for quite some time" - Max, Founder and Developer</i>
-            <br/><br/>
-            <small><a target="_blank" href="https://majig.notion.site/Updates-e294d430f55a48d1a973d65bbfec13e3">Updates</a>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<a href="mailto:hello@majig.net">Contact</a></small>
-        </p>
-    </div>
-    <div class="footer">
-        &copy; 2021 <b>The Majig Group</b>. All rights reserved.
-    </div>
+</div>
+<div class="centered">
+    <img src="./img/Majig-Logoc-03.png" alt="Majig Logo" width="180px"/>
+    <p>
+        We're currently working on the next TTRPG management tool,
+        even if you aren't a dungeon or game master this may still be
+        something for you. Our toolset will make it easy for beginning and
+        expert world builders to create their own world. Want to be one of
+        the first to try it? Check in later.
+        <br/><br/>
+        <i>"We'll be showing you what we've been working on for quite some time" - Max, Founder and Developer</i>
+        <br/><br/>
+        <small><a target="_blank" href="https://majig.notion.site/Updates-e294d430f55a48d1a973d65bbfec13e3">Updates</a>&nbsp;&nbsp;&nbsp;-&nbsp;&nbsp;&nbsp;<a
+                href="mailto:hello@majig.net">Contact</a></small>
+    </p>
+</div>
+<div class="footer">
+    &copy; 2021 <b>The Majig Group</b>. All rights reserved.
+</div>
 </body>
 </html>
